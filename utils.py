@@ -31,7 +31,7 @@ def strings(filename, directory, min=4):
                     st.write(string + "\n")
 
 # Normalize thw namo of application works better on frida
-def normalize_app_name(appName: str):
+def normalize_app_name(appName=str):
     try:
         appName = int(appName)
     except ValueError:
