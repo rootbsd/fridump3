@@ -125,7 +125,7 @@ rpc.exports = {
 script.on("message", on_message)
 script.load()
 
-agent = script.exports
+agent = script.exports_sync
 ranges = agent.enumerate_ranges(PERMS)
 
 if arguments.max_size is not None:
